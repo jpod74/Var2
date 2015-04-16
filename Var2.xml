@@ -48,30 +48,60 @@
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="robot_delay" id="364" inline="true">
-                                    <value name="DELAY">
-                                      <block type="math_number" id="372">
-                                        <field name="NUM">1300</field>
-                                      </block>
-                                    </value>
+                                  <block type="movement_right" id="503">
                                     <next>
-                                      <block type="variables_set" id="373" inline="true">
-                                        <field name="VAR">straightTime</field>
-                                        <value name="VALUE">
-                                          <block type="math_arithmetic" id="411" inline="true">
-                                            <field name="OP">ADD</field>
-                                            <value name="A">
-                                              <block type="variables_get" id="448">
-                                                <field name="VAR">straightTime</field>
-                                              </block>
-                                            </value>
-                                            <value name="B">
-                                              <block type="math_number" id="455">
-                                                <field name="NUM">200</field>
-                                              </block>
-                                            </value>
+                                      <block type="robot_delay" id="364" inline="true">
+                                        <value name="DELAY">
+                                          <block type="math_number" id="372">
+                                            <field name="NUM">1300</field>
                                           </block>
                                         </value>
+                                        <next>
+                                          <block type="movement_stutter" id="513">
+                                            <next>
+                                              <block type="robot_delay" id="514" inline="true">
+                                                <value name="DELAY">
+                                                  <block type="math_number" id="515">
+                                                    <field name="NUM">1300</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="movement_left" id="526">
+                                                    <next>
+                                                      <block type="robot_delay" id="527" inline="true">
+                                                        <value name="DELAY">
+                                                          <block type="math_number" id="528">
+                                                            <field name="NUM">1300</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="variables_set" id="373" inline="true">
+                                                            <field name="VAR">straightTime</field>
+                                                            <value name="VALUE">
+                                                              <block type="math_arithmetic" id="411" inline="true">
+                                                                <field name="OP">ADD</field>
+                                                                <value name="A">
+                                                                  <block type="variables_get" id="448">
+                                                                    <field name="VAR">straightTime</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block type="math_number" id="455">
+                                                                    <field name="NUM">200</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
                                       </block>
                                     </next>
                                   </block>
