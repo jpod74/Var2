@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="variables_set" id="188" inline="true" x="193" y="16">
-    <field name="VAR">straight time</field>
+    <field name="VAR">straightTime</field>
     <value name="VALUE">
       <block type="math_number" id="203">
         <field name="NUM">200</field>
@@ -35,7 +35,7 @@
                       <block type="oled_drawnumber" id="342" inline="true">
                         <value name="NUMBER">
                           <block type="variables_get" id="306">
-                            <field name="VAR">straight time</field>
+                            <field name="VAR">straightTime</field>
                           </block>
                         </value>
                         <next>
@@ -44,7 +44,7 @@
                               <block type="robot_delay" id="362" inline="true">
                                 <value name="DELAY">
                                   <block type="variables_get" id="363">
-                                    <field name="VAR">straight time</field>
+                                    <field name="VAR">straightTime</field>
                                   </block>
                                 </value>
                                 <next>
@@ -56,13 +56,13 @@
                                     </value>
                                     <next>
                                       <block type="variables_set" id="373" inline="true">
-                                        <field name="VAR">straight time</field>
+                                        <field name="VAR">straightTime</field>
                                         <value name="VALUE">
                                           <block type="math_arithmetic" id="411" inline="true">
                                             <field name="OP">ADD</field>
                                             <value name="A">
                                               <block type="variables_get" id="448">
-                                                <field name="VAR">straight time</field>
+                                                <field name="VAR">straightTime</field>
                                               </block>
                                             </value>
                                             <value name="B">
